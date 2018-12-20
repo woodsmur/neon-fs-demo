@@ -1,0 +1,15 @@
+[package]
+name = "fs"
+version = "0.1.0"
+build = "build.rs"
+
+[lib]
+name = "fs"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2"
+
+[dependencies]
+neon = "0.2"
+num_cpus = "1.4.0"
